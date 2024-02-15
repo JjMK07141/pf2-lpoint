@@ -1,0 +1,12 @@
+@media screen and (max-width:768px) { 
+   /*  장치가 스크린이고 장치의 최대너비가 768px일때 {}안의 스타일을 적용하시오  */
+     header .wrap ul.gnb{
+       display: none;
+     }
+     header .wrap span.lang{
+       display: none;
+     }
+     .ham{
+       display: flex;
+     }
+   }

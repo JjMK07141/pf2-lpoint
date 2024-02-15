@@ -1,0 +1,150 @@
+#title {
+  height: 100%;
+  min-height: 800px;
+  position: relative;
+  padding-top: 200px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#title::before{
+  content: "";
+  width: 53%;
+  height: 280px;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(50, 174, 250,1);
+  border-radius: 0 340px 0 0;
+  animation-name: titleL;
+  animation-duration: 0.5s;
+  animation-direction: reverse;
+  animation-timing-function: ease-in;
+}
+@keyframes titleL{
+  0%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100%{
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+#title>a{
+  
+}
+#title>a::before{
+  content: "";
+  background-image: url(../img/lp_2.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: contain;
+  width: 244px;
+  height: 354px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 53%;
+  z-index: 1;
+  animation-name: picB;
+  animation-duration: 1s;
+  animation-direction: reverse;
+  animation-timing-function: ease-in;
+  animation-delay: 0.7s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  transform: translateY(100%);
+}
+@keyframes picB{
+  from{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to{
+    opacity: 0;
+    transform: translateY(80%);
+  }
+}
+/* #title>a::after{
+  content: "";
+  background-image: url(../img/ph_frame.png);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: contain;
+  width: 300px;
+  height: 595px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 51.8%;
+  z-index: 1;
+  animation-name: picBB;
+  animation-duration: 0.8s;
+  animation-direction: reverse;
+  animation-timing-function: ease-in;
+  animation-delay: 0.4s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  transform: translateY(100%);
+}
+@keyframes picBB{
+  from{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to{
+    opacity: 0;
+      transform: translateY(100%);
+  }
+} */
+#title .wrap {
+  /*! height: calc(100% - 490px); */
+  animation-name: titleT;
+  animation-duration: 1s;
+  animation-direction: reverse;
+  animation-timing-function: ease-in;
+}
+@keyframes titleT{
+  0%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(100%)
+  }
+}
+#title .wrap h2 {
+  
+}
+#title .wrap p {
+
+}
+#title::after{
+  content: "";
+  width: 52%;
+  height: 280px;
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,44,157,0.8);
+  border-radius: 340px 0 0 0;
+  animation-name: titleR;
+  animation-duration: 0.6s;
+  animation-direction: reverse;
+  animation-timing-function: ease-in;
+}
+@keyframes titleR{
+  0%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100%{
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
